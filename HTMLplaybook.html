@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>My html5 code playbook</title>
+    </head>
+    <body><!--This is INLINE CSS-->
+        <br>
+        <hr class="head-hr" style="margin-top:3%;"> <!--default hr tag-->
+        
+            <h1 class="headings">My HTML5 Code Playbook</h1>
+        
+        <hr class="head-hr">
+
+        <p class="text-box"><b>To insert BOILER PLATE CODE in-
+            <br>VScode: press'!'
+            <br>Atom: type html</b> 
+            <br><br>
+            <mark>!DOCTYPE html></mark><br>- tells browser which version of html we are using: HTML5 html4 doctype line is quite lengthy.
+            <br>
+            <mark>html lang="en"></mark><br>- tells browser code enclosed in this tag is html code.
+            <br>
+            <mark>head></mark><br>- head contain metadata - machine readable info
+            <br>
+            <mark>meta charset="UTF-8"></mark><br>- this means all text inside our webpage is encoded using UTF-8 encoding system
+            <br>
+            <mark>meta name="descriptiion" content="..."</mark><br>- content written here will appear in description of website in browser/google search - this is how search engines work- scroll html of your website and look for certain meta tags to know what your website is about
+            <br>
+            <mark>meta http-equiv="X-UA-Compatible" content="IE=edge"></mark>
+            <br>
+            <mark>meta name="viewport" content="width=device-width, initial-scale=1.0"></mark>
+            <br>
+            <mark>title>Document/title></mark><br>-defines the document's title that is shown in a Browser's title bar or a page's tab-->
+            <br>
+            <mark>/head</mark><br>- head close
+            <br>
+            <mark>body</mark><br>- body- represents the content of an HTML document
+            <br>
+            <mark>/body</mark><br>- body close
+            <br>
+            <mark>/html</mark><br>- html close
+        </p>
+    <!-------------------------------BOILER PLATE CODE COMPLETED---------------------------------->
+
+        <hr class="head-hr">
+        <h2 class="headings">hr tag</h2>
+        <hr class="head-hr">
+
+        <p>
+            Color:
+            <hr size="3" color="pink"><!--Sets the color of the rule through color name or hexadecimal value.-->
+            Default:
+            <hr>
+            Width 50%:
+            <hr width="50%"><!--Sets the length of the rule on the page through a pixel or percentage value-->
+            Size 20:
+            <hr size="20"><!--this is hr tag without "noshade"-->
+            Noshade wih size 10:
+            <hr size="10" noshade><!--size attribute sets height in pixels-->
+        </p>
+        
+        <hr class="head-hr">
+        <h2 class="headings">Headings tag</h2>
+        <hr class="head-hr">
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <!--Heading give line breaks themselves: no need to add br tag-->
+
+        <hr class="head-hr">
+        <h2 class="headings">i tag v/s em tag</h2>
+        <hr class="head-hr">
+
+        <p class="text-box">Visual result is, by default same but semantic meaning is different. em tag stress emphasis on text while i tag only styles it to differentiate from normal text. Example- "We <em>had to</em> do something about it" while a person/software is reading text he/she/it would pronounce 'had to' with an emphasis whereas same is not true with i tag</p>
+
+        <hr class="head-hr">
+        <h2 class="headings">b tag v/s strong tag</h2>
+        <hr class="head-hr">
+
+        <p class="subheading">
+            <b>b tag:</b> 
+        </p>
+
+        <ul class="text-box" style="list-style-type: disc;">
+            <li>physical state</li>
+            <li>text stylistically different from normal text without conveying any special importance or relevance</li>
+            <li>used when one wants to draw attention without increasing importance</li>
+            <li>good practice to use class attribute with b tag in order to convey additional semantic information</li>
+        </ul>
+        
+        <strong class="subheading">strong tag:</strong>
+        <ul class="text-box" style="list-style-type: disc;">
+            <li>logical state</li>
+            <li>represents text of certain importance</li>
+        </ul>
+        
+        <p class="text-box"><mark>mark tag:</mark>represents text of certain relevance</p>
+        
+        <hr class="head-hr">
+        <h2 class="headings">em tag v/s strong tag</h2>
+        <hr class="head-hr">
+
+        <p class="text-box">
+            <em>em tag:</em> change meaning of sentence as spoken. e.g. I love <em>carrots</em> and I <em>love</em> carrots.
+            <br>
+            <strong>strong tag:</strong> draws attention + importance. e.g. <strong>Warning!</strong> This is very<strong> dangerous</strong>.
+        </p>
+
+        <hr class="head-hr">
+        <h2 class="headings">Unordered lists</h2>
+        <hr class="head-hr">
+
+        <!--for grouping a collection of items that do not have a numerical ordering-->
+        <p class="text-box">
+        Type attribute can be defined in both either ul tag or li tag
+        </p>
+
+        <ul class="text-box">
+            <li type="disc">disc (Default)</li>
+            <li type="circle">circle</li>
+            <li type="square">square</li>
+            <li type="triangle">triangle (not supported by all browsers)</li>
+        </ul>
+        
+        <hr class="head-hr">
+        <h2 class="headings">Ordered lists</h2>
+        <hr class="head-hr">
+        <!--
+            li*5 and enter inserts 5 li 
+            ul>li*5 inserts 5 li of ul
+        -->
+        <h4 class="subheading">Attributes-</h4>
+        <ol type="1" class="text-box">
+            <li><mark>reversed</mark>:  numbered from high to low.</li>
+            <li><mark>start</mark>="4": An integer to start counting from/ always an integer</li>
+            <li><mark>type</mark>="a, A, 1, i, I</li>
+            <li type="i">specified type is used for the entire list unless a different type attribute is used on an enclosed li element</li>
+            <li>for this list item it remains previous type</li>
+        </ol>
+        <ol reversed class="text-box">
+            This one is reversed list
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <hr class="head-hr">
+        <h2 class="headings">Description Lists</h2>
+        <hr class="head-hr">
+
+        <h4 class="subheading">Cryptids of Cornwall:</h4>
+        <dl class="text-box">
+            <dt>Beast of Bodmin</dt>
+            <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+            <dt>Morgawr</dt>
+            <dd>A sea serpent.</dd>
+
+            <dt>Owlman</dt>
+            <dd>A giant owl-like creature.</dd>
+        </dl>
+
+        <hr class="head-hr">
+        <h2 class="headings">Image</h2>
+        <hr class="head-hr">
+
+        <h4 class="subheading">Img attributes</h4>
+        <ul class="text-box" style="list-style-type: disc; line-height: normal;">
+            <li><mark>src</mark>- REQUIRED - contains the path to the image</li>
+            <li><mark>alt</mark>- alternative text to appear</li>Omitting alt indicates that the image is a key part of the content.<br>alt="" indicates that this image is not a key part of the content (it’s decoration or a tracking pixel), and that non-visual browsers may omit it 
+            <li><mark>height</mark>- intrinsic height of the image, in pixels.<br>Must be an integer without a unit.</li>
+            <li><mark>width</mark>- intrinsic width of the image in pixels.<br>Must be an integer without a unit.</li>
+            <li><mark>align</mark>- Aligns the image with its surrounding context.<br>Use the float and/or vertical-align CSS properties instead</li>
+            allowed values- top, left, right, bottom, middle
+            <li><mark>border</mark> width of a border around the image.<br>Use the border CSS property instead.</li>    
+            <li><mark>hspace</mark> - number of pixels of white space on the left and right of the image.<br>Use the margin CSS property instead.</li>
+        </ul>
+
+        <img src="https://images.hdqwalls.com/download/kakashi-hatake-naruto-bw-800x1280.jpg" alt="kakashi" width="200" height="300" align="right">
+        <p class="text-box" style="width:40%; margin-left:8%;">img src=" " alt="kakashi" width="200" height="300" align="right" -></p>
+        
+        <p class="text-box" style="width:40%; margin-left:8% ">no alt - means image is key part of webpage and not just decoration<br>img src="itachi.jpg" -for images saved to same directory where code is present</p>
+
+        <img src="itachi.jpg">
+        <p class="text-box">img src="/images/itachiblack.jpg" width="800" height="600" border="3" hspace="200"<br>hspace can be used to give left and right margin to the image</p>
+        <img src="itachiblack.jpg" width="800" height="600" border="3" hspace="15%">
+        
+        <hr class="head-hr">
+        <h2 class="headings">Links- Anchor tag</h2>
+        <hr class="head-hr">
+
+        <p class="subheading">
+            Attributes- there are many
+        </p>
+        <ul class="text-box">
+            <li><mark>href</mark>- URL that the hyperlink points to</li>
+            <li><mark>download</mark>- Prompts the user to save the linked URL instead of navigating to it</li>
+        </ul>
+
+        <p class="text-box">
+            <a href="https://devdocs.io/html/element/a">Text enclosed within anchor tag</a> -->This link points to 'anchor' tag documentation of 'devdocs.io' 
+        </p>
+        
+
+     <!--------------------------------- SECTION-2 COMPLETED-------------------------------------->
+
+        <hr class="head-hr">
+        <h2 class="headings">HTML Tables</h2>
+        <hr class="head-hr">
+
+        <table bgcolor="#F6F6F6" align="center">
+            <!--red highlighted attributes are deprecated now-->
+            <caption>This is a caption</caption>
+            <!--thead/tfoot are used for stylling head/foot/body differently or made them fixed and stuff like that -->
+            <thead>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-1-</td>
+                    <td>-2-</td>
+                </tr>
+                <tr>
+                    <td>-3-</td>
+                    <td>-4-</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p class="text-box">Tables can be used in html for griding although we have better options and it is not recommended</p>
+        <table cellpadding="10%">
+            <tr>
+                <td>
+                    <p class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab nisi quaerat labore itaque numquam laborum rem dolor saepe id, quis, libero illum possimus maiores voluptates esse dignissimos, corrupti sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam nostrum facilis soluta eaque quos consequatur nihil dolore, perspiciatis dolorem molestias quasi, error quibusdam in non vero suscipit repellat voluptatem?</p>
+                </td>
+                <td>
+                    <p class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab nisi quaerat labore itaque numquam laborum rem dolor saepe id, quis, libero illum possimus maiores voluptates esse dignissimos, corrupti sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam nostrum facilis soluta eaque quos consequatur nihil dolore, perspiciatis dolorem molestias quasi, error quibusdam in non vero suscipit repellat voluptatem?</p>
+                </td>
+            </tr>
+        </table>
+        
+        <p>
+            <mark>By default- NO BORDER</mark>
+        </p>
+        
+        <table cellspacing="10%" cellpadding="30%">
+            <tr>
+                <td>
+                    <p class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab nisi quaerat labore itaque numquam laborum rem dolor saepe id, quis, libero illum possimus maiores voluptates esse dignissimos, corrupti sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam nostrum facilis soluta eaque quos consequatur nihil dolore, perspiciatis dolorem molestias quasi, error quibusdam in non vero suscipit repellat voluptatem?</p>
+                </td>
+                <td>
+                    <p class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab nisi quaerat labore itaque numquam laborum rem dolor saepe id, quis, libero illum possimus maiores voluptates esse dignissimos, corrupti sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam nostrum facilis soluta eaque quos consequatur nihil dolore, perspiciatis dolorem molestias quasi, error quibusdam in non vero suscipit repellat voluptatem?</p>
+                </td>
+                <td>
+                    <p class="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab nisi quaerat labore itaque numquam laborum rem dolor saepe id, quis, libero illum possimus maiores voluptates esse dignissimos, corrupti sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsam nostrum facilis soluta eaque quos consequatur nihil dolore, perspiciatis dolorem molestias quasi, error quibusdam in non vero suscipit repellat voluptatem?</p>
+                </td>
+            </tr>
+        </table>
+
+        <h4 class="subheading">Table attributes-</h4>
+        <ul class="text-box">
+            <li><mark>align:</mark> values-l/r/c</li>
+            <li><mark>bgcolor:</mark>  6-digit hexadecimal RGB code, prefixed by a '#'</li>
+            <li><mark>border:</mark> defines, in pixels, the size of the frame surrounding the table. If set to 0, the frame attribute is set to void.</li>
+            <li><mark>cellspacing:</mark> the size of the space between two cells in a percentage value or pixels</li>
+            <li><mark>cellpadding:</mark> space between the content of a cell and its border, displayed or not</li>
+            <li><mark>width:</mark> defines the width of the table.</li>
+            <p>All these attributes are deprecated now</p>
+        </ul>
+
+        <p class="text-box"> to sort an HTMLCollection of 'tr' elements --> Array.prototype.slice(), Array.prototype.sort(), Node.removeChild(), and Node.appendChild(), you can implement your own sort() function </p>
+
+        <hr class="head-hr">
+        <h2 class="headings">HTML Forms</h2>
+        <hr class="head-hr">
+
+        <p class="text-box">It represents a document section containing interactive controls for submitting information.</p>
+
+        <h4 class="subheading">Attributes:</h4>
+        <ul class="text-box" style="list-style-type: disc;">
+            <li><mark>action:</mark> URL that processes the form submission value can be overridden by a formaction attribute on a 'button', input type="submit", or input type="image" element. This attribute is ignored when method="dialog" is set.</li>
+            <li><mark>enctype:</mark></li>
+            <li><mark>method:</mark>  HTTP method to submit the form with</li>
+            <li><mark>target:</mark></li>
+            <li><mark>nonvalidate:</mark></li>
+        </ul>
+
+        <h4 class="subheading" style="width:20%;">Input element</h4>
+        <p class="text-box">input HTML element is used to create interactive controls for web-based forms in order to accept data from the user</p>
+
+        <!--for structuring our web form and make styling easier form must be in lists-->
+
+        <form action="mailto:kspgsp72@gmail.com" method="post" enctype="text/plain">
+            <fieldset   class="form">
+                <legend>Sample Form</legend>
+                <ul>
+                    <li>
+                        <label for="name">Your Name(text):</label>
+                        &nbsp;
+                        <input type="text" id="name" name="YourName" placeholder="Your name">
+                    </li>
+
+                    <!--name="YourName" this name appear on where data inputted by user appear to admin-->
+                    <li>
+                        <input type="button" id="btn1" value="Click Me">
+                        &nbsp;
+                        <label for="btn1">Ha Ha I did nothing!</label>
+                    </li>
+                    <!-- value attribute contains default text filled onto form -->
+
+                    <li>
+                        <input type="checkbox" checked id="newsletter">
+                        &nbsp;
+                        <label for="newsletter">I am in!</label>
+                    </li>
+
+                    <li>
+                        <input type="button" id="btn2" value="">
+                        &nbsp;
+                        <label for="btn2">  Well...I am an empty button :/</label>
+                    </li>
+                    <!--button function can be coded using javascript-->
+
+                    <li>
+                        <label for="clr">Choose your profile color:</label>
+                        &nbsp;
+                        <input type="color" id="clr">
+                    </li>
+
+                    <li>
+                        <label for="dob">Your DOB</label>
+                        &nbsp;
+                        <input type="date" id="dob">
+                    </li>
+
+                    <li>
+                        <label for="mail">Email:</label>
+                        &nbsp;
+                        <input type="email" id="mail" name="EmailID" placeholder="abc@gmail.com">
+                    </li>
+
+                    <li>
+                        <label for="pswrd">Password:</label>
+                        &nbsp;
+                        <input type="password" name="Password" id="pswrd" placeholder="********">
+                    </li>
+
+                    <li>
+                        <input type="file" name="file">
+                    </li>
+                
+                    <li>
+                        <input type="range" name="range-input">
+                    </li>    
+
+                    <li>
+                        <label for="cars">Choose a car:</label>
+                        &nbsp;
+                        <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                        </select>
+                    </li>
+
+                    <!--Only one radio button in a given group can be selected at the same time-->
+                
+                    <li>
+                        <label>Contact:</label>
+                    
+                        <input type="radio" id="contactChoice1" name="contact" value="email">
+                        <label for="contactChoice1">Email</label>
+
+                        <input type="radio" id="contactChoice2" name="contact" value="phone">
+                        <label for="contactChoice2">Phone</label>
+                    </li>
+                
+                    <!-- 
+                    name="" appear to admin 
+                    value="" is to identify which radio button in a group is selected
+                    id="" to link radio button to correct label
+                    -->
+
+                    <li>
+                        <input type="search" placeholder="Search me" id="srch" name="">
+                        &nbsp;
+                        <button id="srch">Search</button>
+                    </li>
+
+                    <li>
+                        <label for="phone">Contact no.</label>
+                        &nbsp;
+                        <input type="tel" id="phone" name="" placeholder="+91-">
+                    </li>
+
+                    <li>
+                        <label for="link">Enter link to your profile here:</label><br>
+                        <input type="url" id="link" name="" placeholder="https://">
+                    </li>
+
+                    <li>
+                        <label for="msg">Tell us your story here</label><br>
+                        <textarea name="message" id="msg" rows="10" cols="30">I think..>_<</textarea>
+                    </li>
+
+                    <li>
+                        <input type="submit" id="submit" value="Submit Now">
+                    </li>
+            </fieldset>
+        </form>
+
+        <br><br>
+        <p style="font-size: 60%; text-align: center;">NOTE: It is a html5 code playbook, created solely for learning purpose and does contain deprecated html elements and attributes. Since it is not a CSS codeplaybook so, I have just used it for basic styling and focus is given on html only.</p>
+        <hr class="head-hr">
+        <h2 class="headings">Happy Learning!</h2>
+        <hr class="head-hr">
+     <!--------------------------------- SECTION-3 COMPLETED-------------------------------------->
+    </body>
+</html>
