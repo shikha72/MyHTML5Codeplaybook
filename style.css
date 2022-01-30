@@ -66,4 +66,6 @@ default is a pseudo class-
     border-width: .01rem;
     border-radius: 0.3em;
 }
-  
+#note{
+    font-size: 60%;
+}
